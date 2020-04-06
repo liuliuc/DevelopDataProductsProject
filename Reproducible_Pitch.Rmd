@@ -1,0 +1,64 @@
+---
+title: "Reproducible_Pitch"
+author: "Li"
+date: "4/5/2020"
+output:
+  slidy_presentation: default
+  powerpoint_presentation: default
+  ioslides_presentation: default
+---
+Slide 2 Overview
+========================================================
+
+This is the final project of DevelopDataProducts course.
+
+It contains:
+
+- Shiny Application
+- Reproducible Pitch
+
+
+Slide 3 Shiny Application
+========================================================
+
+1. The Shiny application source files are at Github:
+    - ui.R
+    - server.R
+    
+ (https://github.com/liuliuc/DevelopDataProductsProject.git)
+
+2. To view the shiny application html:
+
+https://liuliwest.shinyapps.io/developdataproductsproject/
+
+Slide 4 Source Code
+========================================================
+
+R source code:
+
+library(plotly)
+
+set.seed(2020-04-05)
+
+x <- rnorm(100, mean = 30, sd = 5)
+
+y <- rnorm(100)
+
+z <- 1:200
+
+plot_ly(x = ~x, y = ~y, z = ~z,
+        type = "scatter3d", mode="markers", color = ~x)
+
+
+Slide 5 Plot
+========================================================
+
+```{r, echo=FALSE}
+library(plotly)
+set.seed(2020-04-05)
+x <- rnorm(100)
+y <- rnorm(100)
+z <- 1:100
+plot_ly(x=~x,y=~y,z=~z,
+        type="scatter3d",mode="markers",color=~x)
+```
